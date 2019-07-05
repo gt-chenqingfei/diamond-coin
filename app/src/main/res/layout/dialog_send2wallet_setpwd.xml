@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setpwd_constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/setpwd_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_setpwd_title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/app_3e4f6c"
+        android:textSize="@dimen/sp_18"/>
+
+
+    <FrameLayout
+        android:id="@+id/etpwd_fl_pwd"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_13"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setpwd_tv_title">
+
+        <EditText
+            android:id="@+id/setpwd_et_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_edf3fc"
+            android:gravity="center_vertical"
+            android:hint="@string/dialog_setpwd_pwd"
+            android:paddingLeft="@dimen/dp_5"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColorHint="@color/app_c4cfe1"
+            android:textSize="@dimen/sp_13"
+            tools:text="12345678901234567890" />
+
+        <CheckBox
+            android:visibility="gone"
+            android:id="@+id/setpwd_cb_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/dp_10"
+            android:button="@drawable/pwd_bg"
+            android:src="@mipmap/ic_launcher" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/etpwd_fl_pwd_confirm"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_13"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etpwd_fl_pwd">
+
+        <EditText
+            android:id="@+id/setpwd_et_pwd_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_edf3fc"
+            android:gravity="center_vertical"
+            android:hint="@string/dialog_setpwd_pwd_confirm"
+            android:paddingLeft="@dimen/dp_5"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColorHint="@color/app_c4cfe1"
+            android:textSize="@dimen/sp_13"
+            tools:text="12345678901234567890" />
+
+        <CheckBox
+            android:visibility="gone"
+            android:id="@+id/setpwd_cb_pwd_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/dp_10"
+            android:button="@drawable/pwd_bg"
+            android:src="@mipmap/ic_launcher" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etpwd_fl_pwd_confirm">
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/setpwd_bt_pwd_cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="1"
+            android:text="@string/dialog_setpwd_cancel"
+            android:background="@drawable/btn_selector"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:layout_marginRight="@dimen/dp_7"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/setpwd_bt_pwd_confirm"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:layout_marginRight="@dimen/dp_7"
+            android:text="@string/dialog_setpwd_confirm"
+            android:background="@drawable/btn_selector"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

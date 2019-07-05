@@ -1,0 +1,98 @@
+<resources>
+    <string name="login">登录</string>
+    <string name="tips_net_error">网络错误</string>
+    <string name="tips_pay_error">支付失败</string>
+    <string name="tips_loading">正在加载</string>
+    <string name="tips_messager_not_install">请先安装 Messager</string>
+    <string name="tips_timeout">请求超时，请稍后再试</string>
+    <string name="tips_pay_sucess">支付成功</string>
+
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="complete">完成</string>
+
+
+    <string name="sign_up">注册</string>
+    <string name="change_phone_number">更改手机号</string>
+    <string name="login_use_password">密码登陆</string>
+    <string name="activity_my_account_title">我的账户</string>
+    <string name="account_balance">账户余额</string>
+    <string name="recharge_balance">充值余额</string>
+    <string name="my_account_tips">如有问题，请点联系客服</string>
+    <string name="go_to_pay">去支付</string>
+
+
+    <string name="activity_my_profile_title">真爱档案</string>
+    <string name="he_sent_to_me">Ta送我</string>
+    <string name="i_sent_to_him">我送Ta</string>
+    <string name="my_profile_sent">我送出的</string>
+    <string name="my_profile_received">我收到的</string>
+    <string name="my_profile_recharged">我购买的</string>
+    <string name="user_profile_beyond_lover">超过了世界%1s的真爱</string>
+    <string name="withdraw_cash">提现</string>
+    <string name="recharge">充值</string>
+    <string name="dissolution_of_relationship">解除关系</string>
+
+
+    <string name="activity_recharge_title">充值</string>
+    <string name="activity_recharge_balance">余额 %1d Diamond</string>
+    <string name="rechage_buy_now">立即购买</string>
+    <string name="recharge_realtime_price">实时价格</string>
+    <string name="recharge_num_hints">清输入购买数量</string>
+
+    <string name="activity_pay_path_title">我的的订单</string>
+    <string name="pay_quantity">数量</string>
+    <string name="pay_purchase_price">购入价格</string>
+    <string name="pay_choose_payment_method">选择支付方式</string>
+
+    <string name="activity_send_title">给真爱加码</string>
+    <string name="send_icon_hint">输入要赠送的L币</string>
+    <string name="please_accept_my_love_hint">接受我的表白吧</string>
+    <string name="show_love_to_her">向TA示爱</string>
+    <string name="dialog_cancel_relation_tips">如果解除真爱关系，曾经的所有将不复存在，真爱值清零，你确定吗？</string>
+    <string name="dialog_cancel_relation_i_am_sure">我确定</string>
+    <string name="dialog_cancel_relation_input_hint">请输入我确定三个字</string>
+    <string name="dialog_cancel_relation_input_hint_again">请再次输入我确定三个字</string>
+
+    <string name="activity_my_records_title">我的记录</string>
+    <string-array name="my_records_titles">
+        <item>我送出的</item>
+        <item>我收到的</item>
+        <item>我购买的</item>
+    </string-array>
+
+    <string name="lesson_diamond_tips">您的eDiamond不足，请充值</string>
+    <string name="main_single_tips">一杯咖啡的费用或许就换来一生的陪伴，送L币寻找真爱吧</string>
+    <string name="feature_disable">此功能暂未开放</string>
+    <string name="activity_bind_title">绑定手机号</string>
+    <string name="str_login_expired">您的登录已过期，请重新登录。</string>
+    <string name="str_account_login_into_other_device">您的账号在已另一台设备上登录。</string>
+    <string name="str_send_to_substratum_address">Send to substratum address</string>
+    <string name="activity_send_2_wallet_title">Send to wallet</string>
+    <string name="activity_scan_qr_code_title">扫码</string>
+    <string name="str_title_login">登录</string>
+    <string name="str_title_bind_phone_number">绑定手机号码</string>
+    <string name="str_btn_submit">提交</string>
+    <string name="str_title_register">注册</string>
+    <string name="str_btn_next">继续</string>
+    <string name="str_phone_number">手机号码</string>
+    <string name="repeate_verification_code_after_27_seconds">在%1s秒后再次发送验证码</string>
+    <string name="str_change_phone_number">更改该手机号码</string>
+    <string name="str_message_has_been_sent_to">已经发送了一条消息</string>
+    <string name="activity_set_profile_title">完善资料</string>
+    <string name="activity_set_profile_title_edit">编辑资料</string>
+    <string name="str_name">昵称</string>
+    <string name="str_gender_male">男</string>
+    <string name="str_gender_female">女</string>
+    <string name="str_ok">确定</string>
+    <string name="str_enter_verification_code">输入验证码</string>
+    <string name="str_copy_the_link_to_your_love">复制链接分享给好友</string>
+    <string name="str_copied">链接已复制到剪贴板</string>
+    <string name="str_my_love">My Love</string>
+    <string name="str_share_title">分享</string>
+    <string name="str_facebook">Facebook</string>
+    <string name="str_add_currency">Add Currency</string>
+    <string name="str_cash_balance">Cash Balance</string>
+    <string name="str_ediamond">eDiamond</string>
+    <string name="str_ediamond_balance">eDiamond Balance</string>
+</resources>

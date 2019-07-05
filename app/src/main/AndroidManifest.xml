@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lovecoin.ediamond">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- bugly begin -->
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        tools:node="remove" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <!-- bugly end -->
+    <application
+        android:name=".app.App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_ic_notification" />
+        <!--
+             Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+
+        <service android:name=".push.PushIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".push.MessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="${applicationId}.braintree" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.entry.SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.entry.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.BillingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.entry.login.LoginByPhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.entry.reg.RegActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.entry.bind.BindActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.entry.check.CheckCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.entry.face.FaceIdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.profile.UserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.profile.MyProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.recharge.RechargeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.recharge.PayPathActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.send.SendActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.record.RecordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.account.MyAccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.lovecoin.extra.area.CountryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.setting.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.webview.WebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.setting.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.record.RecordList4WalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.send.SendToWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.send.ScanQRCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.entry.information.SettingProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.entry.bind.BindMobileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.guide.GuideActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/translucent" />
+        <activity
+            android:name=".ui.entry.contact.ContactActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.record.RecordListFromWalletActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.record.RecordTransactionDetailsActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

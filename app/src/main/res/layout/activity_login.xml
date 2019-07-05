@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context="com.lovecoin.ediamond.ui.entry.login.LoginActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/icon_splash_logo_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_26"
+        android:text="Login with"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_16"
+        app:layout_constraintBottom_toTopOf="@+id/phone_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="@dimen/dp_16"
+        android:background="@drawable/login_phone_btn_bg"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/facebook_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.8">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_24"
+            android:src="@drawable/ic_mobile" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/str_phone_number"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/facebook_layout"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/login_facebook_btn_bg"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/sign_up_tips_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_goneMarginBottom="100dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="@dimen/dp_24"
+            android:src="@drawable/ic_login_facebook" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Facebook"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/sign_up_tips_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="Or use phone number to "
+        android:textColor="@color/app_3eff6c_60"
+        android:textSize="@dimen/sp_16"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/sign_up_tv"
+        tools:visibility="gone" />
+
+    <com.lovecoin.ediamond.widget.UnderlineTextView
+        android:id="@+id/sign_up_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sign up"
+        android:textColor="@color/app_3e4f6c"
+        android:textSize="@dimen/sp_16"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/sign_up_tips_tv"
+        app:layout_constraintLeft_toRightOf="@+id/sign_up_tips_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:visibility="gone" />
+
+</android.support.constraint.ConstraintLayout>

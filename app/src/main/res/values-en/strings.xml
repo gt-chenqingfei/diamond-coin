@@ -1,0 +1,7 @@
+<resources>
+    <string name="versionchecklib_confirm">Update</string>
+    <string name="versionchecklib_cancel">Cancel</string>
+    <string name="str_send_to_substratum_address">Send to substratum address</string>
+    <string name="activity_send_2_wallet_title">Send to wallet</string>
+    <string name="activity_scan_qr_code_title">扫码</string>
+</resources>

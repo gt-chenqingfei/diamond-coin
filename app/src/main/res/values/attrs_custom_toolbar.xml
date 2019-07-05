@@ -1,0 +1,9 @@
+<resources>
+    <declare-styleable name="CustomToolbar">
+        <attr name="title" format="string" />
+        <attr name="menuText" format="string" />
+        <attr name="menuIcon" format="reference"/>
+        <attr name="titleSize" format="dimension" />
+        <attr name="titleColor" format="color" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.lovecoin.ediamond.ui.profile.MyProfileActivity">
+
+    <com.lovecoin.ediamond.widget.CustomToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/white"
+        app:title="@string/activity_my_account_title" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/app_f7f9fe"
+        app:srlEnableOverScrollDrag="false"
+        app:srlEnablePreviewInEditMode="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_bottom_round_7dp_shadow"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/dp_34"
+                    android:paddingTop="@dimen/dp_10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cash Balance"
+                        android:textColor="@color/app_7e94bb"
+                        android:textSize="@dimen/sp_14"
+                        app:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/my_account_balance_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:text="$ 0.00"
+                        android:textColor="@color/app_3e4f6c"
+                        android:textSize="@dimen/sp_24"
+                        app:layout_gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_12"
+                        android:minHeight="162dp">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp_24"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add Currency"
+                            android:textColor="@color/app_3e4f6c"
+                            android:textSize="@dimen/sp_14"
+                            app:layout_gravity="center" />
+
+                        <TextView
+                            android:id="@+id/recharge_money_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp_4"
+                            android:text="$ 0.00"
+                            android:textColor="@color/app_6667fd"
+                            android:textSize="@dimen/sp_18"
+                            app:layout_gravity="center" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btn_pay_4_paypal"
+                        android:layout_width="308dp"
+                        android:layout_height="66dp"
+                        android:layout_marginTop="@dimen/dp_13"
+                        android:background="@drawable/btn_bg_round_33dp_shadow"
+                        android:drawableStart="@drawable/ic_paypal"
+                        android:paddingEnd="@dimen/dp_32"
+                        android:paddingStart="@dimen/dp_32"
+                        android:text="@string/pay_4_paypal"
+                        android:textColor="@color/app_3e4f6c" />
+
+                    <Button
+                        android:id="@+id/btn_pay_4_google"
+                        android:layout_width="308dp"
+                        android:layout_height="66dp"
+                        android:layout_marginTop="@dimen/dp_6"
+                        android:background="@drawable/btn_bg_round_33dp_shadow"
+                        android:drawableStart="@drawable/ic_google"
+                        android:paddingEnd="@dimen/dp_32"
+                        android:paddingStart="@dimen/dp_32"
+                        android:text="@string/pay_4_google"
+                        android:textColor="@color/app_3e4f6c"
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tips"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp_30"
+                        android:layout_marginRight="@dimen/dp_30"
+                        android:lineSpacingExtra="@dimen/dp_3"
+                        android:text="@string/my_account_tips"
+                        android:textColor="@color/app_3e4f6c"
+                        android:textSize="@dimen/sp_14"
+                        app:layout_gravity="left"
+                        android:layout_marginTop="@dimen/dp_20"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

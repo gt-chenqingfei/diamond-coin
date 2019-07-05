@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    android:id="@+id/record_bottom_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/record_coin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_calendar"
+            android:text="100 eDiamond"
+            android:textColor="@color/app_3e4f6c"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/record_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="10-13 14:22"
+            android:textColor="@color/app_7e94bb"
+            android:textSize="@dimen/sp_13" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/record_value_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_calendar"
+        android:layout_marginRight="@dimen/dp_30"
+        android:text="$ 100"
+        android:textColor="@color/app_3e4f6c"
+        android:textSize="@dimen/sp_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_18"
+        android:background="@color/app_edf3fc" />
+
+</RelativeLayout>
+

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_f7f9fe">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp_10"
+
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_marginStart="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@drawable/bg_round_7dp_shadow"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/dp_24"
+        android:paddingEnd="@dimen/dp_24"
+        android:paddingStart="@dimen/dp_24"
+        android:paddingTop="@dimen/dp_24">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/send_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_send" />
+
+            <TextView
+                android:id="@+id/i_send_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_14"
+                android:textColor="@color/app_3e4f6c"
+                android:textSize="@dimen/sp_16"
+                tools:text="30000" />
+
+            <TextView
+                android:id="@+id/send_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="@string/my_profile_sent"
+                android:textColor="@color/app_3e4f6c"
+                android:textSize="@dimen/sp_13"
+                app:layout_constraintEnd_toEndOf="@+id/send_image"
+                app:layout_constraintStart_toStartOf="@+id/send_image"
+                app:layout_constraintTop_toBottomOf="@+id/recieve_num_tv" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/app_shadow" />
+
+        <LinearLayout
+            android:id="@+id/my_record_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_received"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/send_image"
+                app:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/i_recieved_num_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_14"
+                android:textColor="@color/app_3e4f6c"
+                android:textSize="@dimen/sp_16"
+                tools:text="30000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="@string/my_profile_received"
+                android:textColor="@color/app_3e4f6c"
+                android:textSize="@dimen/sp_13"
+                app:layout_constraintEnd_toEndOf="@+id/recieve_num_tv"
+                app:layout_constraintStart_toEndOf="@+id/send_tv"
+                app:layout_constraintStart_toStartOf="@+id/recieve_num_tv"
+                app:layout_constraintTop_toTopOf="@+id/send_tv"
+                app:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/relationTime_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_c4cfe1"
+                android:textSize="@dimen/sp_14"
+                tools:text="1年2个月" />
+
+            <TextView
+                android:id="@+id/begin_end_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/app_c4cfe1"
+                android:textSize="@dimen/sp_12"
+                tools:text="2011-1-1 ~ 1010-1-1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/beyondLover_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp_3"
+            android:gravity="right"
+            android:textColor="@color/app_3e4f6c"
+            android:textSize="@dimen/sp_15"
+            android:visibility="gone"
+            tools:text="@string/user_profile_beyond_lover" />
+
+
+        <TextView
+            android:id="@+id/del_relation_btn"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/shadow_button_white"
+            android:gravity="center"
+            android:text="@string/dissolution_of_relationship"
+            android:textColor="@color/app_3e4f6c"
+            android:textSize="@dimen/sp_14" />
+
+    </RelativeLayout>
+
+</FrameLayout>

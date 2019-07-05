@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp_4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@drawable/shadow_button_white"
+        android:paddingLeft="@dimen/dp_32"
+        android:paddingRight="@dimen/dp_32">
+
+        <TextView
+            android:id="@+id/recharge_num_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            tools:text="100"
+            android:textColor="@color/app_3e4f6c"
+            android:textSize="@dimen/sp_20" />
+
+        <TextView
+            android:id="@+id/recharge_total_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            tools:text="¥10000"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/sp_16" />
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+
+        

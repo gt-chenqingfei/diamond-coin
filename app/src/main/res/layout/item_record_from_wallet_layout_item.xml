@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/record_bottom_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_item_record"
+        android:layout_width="@dimen/dp_45"
+        android:layout_height="@dimen/dp_45"
+        android:src="@drawable/dialog_warning"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dp_10"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/iv_item_record"
+        android:layout_marginTop="@dimen/dp_13"
+        android:layout_marginLeft="@dimen/dp_3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_record_coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_calendar"
+            android:text="100 eDiamonds"
+            android:textColor="@color/app_3e4f6c"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/tv_record_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="adress"
+            android:textColor="@color/app_7e94bb"
+            android:textSize="@dimen/sp_13"
+            android:maxLines="2"
+            android:paddingRight="@dimen/dp_45"/>
+
+        <TextView
+            android:id="@+id/tv_record_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="status"
+            android:textColor="@color/app_7e94bb"
+            android:textSize="@dimen/sp_13"
+            android:maxLines="1"
+            android:layout_marginBottom="@dimen/dp_13"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_item_record_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/arrow_right"
+        android:layout_marginRight="@dimen/dp_30"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginRight="@dimen/dp_18"
+        android:background="@color/app_edf3fc" />
+
+</RelativeLayout>
+

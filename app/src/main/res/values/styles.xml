@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/app_3e4f6c</item>
+        <item name="colorPrimaryDark">@color/app_3e4f6c</item>
+        <item name="colorAccent">@color/app_3e4f6c</item>
+        <item name="android:windowBackground">@color/app_f7f9fe</item>
+        <item name="android:fontFamily">@font/font</item>
+    </style>
+
+    <style name="AppTheme.FullScreen">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="translucent" parent="QMUI.Compat.NoActionBar">
+        <item name="android:windowBackground">@color/black_transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Holo.DialogWhenLarge">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@drawable/custom_dialog</item>
+        <item name="android:padding">@dimen/dp_20</item>
+    </style>
+
+</resources>

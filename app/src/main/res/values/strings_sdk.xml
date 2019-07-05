@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- fb sdk -->
+    <string name="facebook_app_id" translatable="false">507816159591524</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb507816159591524</string>
+    <string name="default_key" translatable="false">CA7BF4E1AEEE6E114B5D1CB043F219D9</string>
+</resources>

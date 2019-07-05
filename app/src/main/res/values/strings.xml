@@ -1,0 +1,146 @@
+<resources>
+    <string name="app_name" translatable="false">eDiamond</string>
+    <string name="tips_net_error">Net Error</string>
+    <string name="tips_pay_error">Pay Error</string>
+    <string name="tips_loading">Loading</string>
+    <string name="tips_messager_not_install">Messager must be installed</string>
+    <string name="tips_pay_sucess">Pay Success</string>
+    <string name="tips_timeout">Request timeout, Please try it later.</string>
+
+
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="complete">Complete</string>
+
+    <string name="login">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="change_phone_number">Change Mobile Number</string>
+    <string name="login_use_password">Use Password</string>
+
+
+    <string name="activity_my_account_title">Add Currency</string>
+    <string name="account_balance">Account Balance</string>
+    <string name="my_account_tips">Having Trouble Purchasing?</string>
+    <string name="go_to_pay">Pay</string>
+
+    <string name="activity_my_profile_title">My Profile</string>
+    <string name="activity_user_profile_title">True Love File</string>
+    <string name="he_sent_to_me">Sent</string>
+    <string name="i_sent_to_him">Received</string>
+    <string name="my_account">My Account</string>
+    <string name="my_profile_sent">Sent</string>
+    <string name="my_profile_received">Received</string>
+    <string name="my_profile_recharged">Transaction</string>
+    <string name="user_profile_beyond_lover">Beyond %1s of\nthe world</string>
+    <string name="withdraw_cash">Withdraw Cash</string>
+    <string name="recharge">Recharge</string>
+    <string name="dissolution_of_relationship">Break up</string>
+
+
+    <string name="activity_recharge_title">Buy More</string>
+    <string name="activity_recharge_balance">eDiamond Balance %1d</string>
+    <string name="rechage_buy_now">Buy Now</string>
+    <string name="rechage_buy_more">Buy More</string>
+    <string name="recharge_realtime_price">Real time price</string>
+    <string name="recharge_num_hints">Please enter the number</string>
+
+    <string name="activity_pay_path_title">My Order</string>
+    <string name="pay_quantity">Quantity</string>
+    <string name="pay_purchase_price">Purchase price</string>
+    <string name="pay_choose_payment_method">Choose payment method</string>
+
+    <string name="activity_send_title">Send</string>
+    <string name="send_icon_hint">Please enter the number</string>
+    <string name="please_accept_my_love_hint">Please accept my love</string>
+    <string name="show_love_to_her">Show Your Love</string>
+
+    <string name="dialog_cancel_relation_tips">Are you sure you want to break up?</string>
+    <string name="dialog_cancel_relation_i_am_sure">I AM SURE</string>
+    <string name="dialog_cancel_relation_input_hint">I AM SURE</string>
+    <string name="dialog_cancel_relation_input_hint_again">Please input  I AM SURE again</string>
+
+    <string name="activity_my_records_title">Transaction</string>
+    <string name="activity_record_list_from_wallet_title">Record</string>
+    <string-array name="my_records_titles">
+        <item>Sent</item>
+        <item>Received</item>
+        <item>Bought</item>
+    </string-array>
+
+    <string name="lesson_diamond_tips">Your eDiamond is not enough, please buy more.</string>
+    <string name="lesson_balance_tips">Insufficient Balance.</string>
+    <string name="main_single_tips">The cost of a cup of coffee may be a lifetime companion, sending eDiamond to find true love!</string>
+    <string name="feature_disable">This feature is not yet open</string>
+    <string name="versionchecklib_confirm">Update</string>
+    <string name="versionchecklib_cancel">Cancel</string>
+    <string name="activity_bind_title">Bind Mobile</string>
+    <string name="str_login_expired">This login has expired, please login again.</string>
+    <string name="str_account_login_into_other_device">Your account has been logged into from another device.</string>
+    <string name="str_send_to_substratum_address">Withdraw Address</string>
+    <string name="activity_send_2_wallet_title">Send to wallet</string>
+    <string name="str_scan_qr_code_hint">Scan Failed</string>
+    <string name="str_ablum">Album</string>
+    <string name="activity_scan_qr_code_title">QR Code</string>
+    <string name="str_title_login">Login</string>
+    <string name="str_title_contact">Contact Us</string>
+    <string name="str_title_bind_phone_number">Bind Mobile Number</string>
+    <string name="str_btn_submit">Submit</string>
+    <string name="str_title_register">Register</string>
+    <string name="str_btn_next">Next</string>
+    <string name="str_phone_number">Mobile Number</string>
+    <string name="repeate_verification_code_after_27_seconds">Send the code again after \n  %1s seconds</string>
+    <string name="str_change_phone_number">Change phone number</string>
+    <string name="str_message_has_been_sent_to">A Message has been sent to</string>
+    <string name="activity_set_profile_title">Complete Personal Information</string>
+    <string name="activity_set_profile_title_edit">Edit Personal Information</string>
+    <string name="str_name">Name</string>
+    <string name="str_gender_male">Male</string>
+    <string name="str_gender_female">Female</string>
+    <string name="str_ok">OK</string>
+    <string name="str_enter_verification_code">Enter Verification Code</string>
+    <string name="str_copy_the_link_to_your_love">Copy eDiamond Sending Link</string>
+    <string name="str_copied">Link Copied.\nPlease Send to Your Love.</string>
+    <string name="str_my_love">My Love</string>
+    <string name="str_share_title">Share</string>
+    <string name="str_facebook">Facebook</string>
+    <string name="pay_4_paypal" translatable="false">PayPal</string>
+    <string name="pay_4_google">Google Pay</string>
+    <string name="str_add_currency">Add Currency</string>
+    <string name="str_cash_balance">Cash Balance</string>
+    <string name="str_ediamond">eDiamond</string>
+    <string name="str_ediamond_balance">eDiamond Balance</string>
+    <string name="myprofile_withdraw">Withdraw</string>
+
+    <!-- withdraw currency -->
+    <string name="dialog_setpwd_title">Set Fund Password</string>
+    <string name="dialog_setpwd_title_enter">Enter Fund Password</string>
+    <string name="dialog_setpwd_pwd">Password</string>
+    <string name="dialog_setpwd_pwd_confirm">Repeat Password</string>
+    <string name="dialog_setpwd_cancel">Cancel</string>
+    <string name="dialog_setpwd_confirm">Confirm</string>
+    <string name="dialog_setpwd_confirm_error">The password was inconsistent</string>
+    <string name="dialog_warning_address_content">Please confirm this address points to a private wallet or a designated exchange account (You can find our designated exchange list in "'settings -> help'" ). \nIf you provide an exchange account address which doesn"'"t support eDiamond trade, you may not be able to track or trade these eDiamonds after receiving them.</string>
+    <string name="dialog_warning_successful_content">You application has been successfully submitted</string>
+    <string name="dialog_warning_successful_content_prompt">Please check the details of this application in Send Record</string>
+    <string name="send_wallet_nomore_ediamond">You need more eDiamond to send this asset</string>
+    <string name="withdraw_currency_07001">Please wait until the previous withdraw transactions finished</string>
+    <string name="withdraw_currency_07002">The withdraw password has been set</string>
+    <string name="withdraw_currency_07003">Wrong withdraw password</string>
+    <string name="withdraw_currency_07004">Insufficient amount of ediamonds</string>
+    <string name="record_transation_details_title">Transaction Details</string>
+    <string name="record_transation_details_amount_title">Amount</string>
+    <string name="record_transation_details_estimated_title">Tx fee</string>
+    <string name="record_transation_details_recipient_title">Recipient</string>
+    <string name="record_transation_details_start_timestamp_title">Submitting Time</string>
+    <string name="record_transation_details_timestamp_title">Completion Time</string>
+    <string name="record_transation_details_state_title">State</string>
+    <string name="record_transation_details_transaction_title">Transaction ID</string>
+    <string name="record_transation_details_note_title">Note</string>
+    <string name="record_transation_details_link_title">You can track this transaction through the following link</string>
+    <string name="withdraw_currency_estimated">Estimated Tx fee: </string>
+    <string name="withdraw_currency_received_amounts">Estimated Received: </string>
+    <string name="withdraw_currency_status_pending">Poundage: </string>
+    <string name="withdraw_currency_address_error">Invalid wallet address</string>
+    <string name="withdraw_currency_identifying_code_error">Invalid verification code</string>
+
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setpwd_constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/right_iv_title"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:src="@drawable/dialog_right"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/right_tv_content_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_warning_successful_content"
+        android:textColor="@color/app_3e4f6c"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginTop="@dimen/dp_13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/right_iv_title"/>
+
+    <TextView
+        android:id="@+id/right_tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dialog_warning_successful_content_prompt"
+        android:textColor="@color/app_3e4f6c"
+        android:textSize="@dimen/sp_15"
+        android:layout_marginTop="@dimen/dp_13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/right_tv_content_title"/>
+
+    <!--<TextView
+        android:id="@+id/right_tv_url_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="url_title"
+        android:textColor="@color/app_3e4f6c"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginTop="@dimen/dp_13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/right_tv_content"/>
+
+    <TextView
+        android:id="@+id/right_tv_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="url"
+        android:textColor="@color/app_3e4f6c"
+        android:textSize="@dimen/sp_18"
+        android:layout_marginTop="@dimen/dp_13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/right_tv_url_title"/>-->
+
+
+
+</android.support.constraint.ConstraintLayout>

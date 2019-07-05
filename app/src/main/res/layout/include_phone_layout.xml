@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_45"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+          app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintWidth_percent="0.66">
+
+        <TextView
+            android:id="@+id/country_code_tv"
+            android:layout_width="70dp"
+            android:layout_height="45dp"
+            android:background="@color/app_3e4f6c"
+            android:gravity="center"
+            android:spinnerMode="dropdown"
+            android:text="+1"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/phone_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@color/app_edf3fc"
+            android:gravity="center"
+            android:hint="@string/str_phone_number"
+            android:inputType="phone"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColorHint="@color/app_c4cfe1"
+            android:textSize="@dimen/sp_13" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/pwd_layout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_13"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone_layout"
+        app:layout_constraintWidth_percent="0.66">
+
+        <EditText
+            android:id="@+id/pwd_et"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_edf3fc"
+            android:gravity="center"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColorHint="@color/app_c4cfe1"
+            android:textSize="@dimen/sp_13"
+            tools:text="12345678901234567890" />
+
+        <CheckBox
+            android:id="@+id/pwd_cb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="@dimen/dp_10"
+            android:button="@drawable/pwd_bg"
+            android:src="@mipmap/ic_launcher" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/action_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_45"
+        android:layout_marginTop="@dimen/dp_13"
+        android:background="@drawable/btn_selector"
+        android:enabled="false"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwd_layout"
+        app:layout_constraintWidth_percent="0.66"
+        app:layout_goneMarginTop="@dimen/dp_13"
+        tools:layout_editor_absoluteY="335dp"
+        tools:text="继续" />
+</android.support.constraint.ConstraintLayout>

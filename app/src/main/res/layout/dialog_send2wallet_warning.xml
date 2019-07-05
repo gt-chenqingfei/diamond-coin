@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/setpwd_constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/warning_iv_title"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:src="@drawable/dialog_warning"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/warning_tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/app_3e4f6c"
+        android:textSize="@dimen/sp_15"
+        android:layout_marginTop="@dimen/dp_13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/warning_iv_title"/>
+
+    <!--<TextView
+        android:id="@+id/warning_tv_content2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you provide an exchange account address which doesn't support eDiamond trade, you may not be able to track or trade these eDiamonds after receiving them. "
+        android:textColor="@color/app_3e4f6c"
+        android:textSize="@dimen/sp_15"
+        android:layout_marginTop="@dimen/dp_13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/warning_tv_content"/>-->
+
+    <TextView
+        android:id="@+id/warning_tv_content_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="content_count"
+        android:textColor="@color/app_6667fd"
+        android:textSize="@dimen/sp_15"
+        android:layout_marginTop="@dimen/dp_5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/warning_tv_content"/>
+
+    <TextView
+        android:id="@+id/warning_tv_content_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="content_count"
+        android:textColor="@color/app_7e94bb"
+        android:textSize="@dimen/sp_15"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/warning_tv_content_count"/>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/dp_13"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/warning_tv_content_adress">
+
+        <Button
+            android:id="@+id/warning_bt_pwd_cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="1"
+            android:text="@string/dialog_setpwd_cancel"
+            android:background="@drawable/btn_selector"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:layout_marginRight="@dimen/dp_7"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/warning_bt_pwd_confirm"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_45"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:layout_marginRight="@dimen/dp_7"
+            android:text="@string/dialog_setpwd_confirm"
+            android:background="@drawable/btn_selector"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "893298805428",
+    "firebase_url": "https://ediamond-31210.firebaseio.com",
+    "project_id": "ediamond-31210",
+    "storage_bucket": "ediamond-31210.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:893298805428:android:8f86211ed6141021",
+        "android_client_info": {
+          "package_name": "com.lovecoin.ediamond"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "893298805428-6k0s4t1eib2qf6kpnlcbm8uf85vjhf4h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-cMo-lPz1KCPBEAfYpEZUBbxFquAGdzk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:fitsSystemWindows="true" />
+
+    <com.lovecoin.ediamond.widget.CustomToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/white"
+        app:title="Buy eDiamonds" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rl_bottom"
+        android:layout_below="@+id/toolbar"
+        app:srlEnableOverScrollDrag="false"
+        app:srlEnablePreviewInEditMode="true">
+
+        <LinearLayout
+            android:id="@+id/top_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/app_f7f9fe"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_40"
+                    android:text="@string/str_ediamond_balance"
+                    android:textColor="@color/app_7e94bb"
+                    android:textSize="@dimen/sp_16" />
+
+                <TextView
+                    android:id="@+id/balance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_6"
+                    android:textColor="@color/app_3e4f6c"
+                    android:textSize="@dimen/sp_24"
+                    tools:text="11" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/dp_22"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="22dp"
+                    android:layout_marginTop="@dimen/dp_38"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_ediamond"
+                            android:textColor="@color/app_3e4f6c"
+                            android:textSize="@dimen/dp_14" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="1"
+                            android:textColor="@color/app_3e4f6c"
+                            android:textSize="@dimen/dp_20" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/icon_switch" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Real-time price"
+                            android:textColor="@color/app_3e4f6c"
+                            android:textSize="@dimen/dp_14" />
+
+                        <TextView
+                            android:id="@+id/real_time_price_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textColor="@color/app_6667fd"
+                            android:textSize="@dimen/dp_20"
+                            tools:text="100" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="258dp"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginTop="@dimen/dp_30"
+                android:background="@color/app_edf3fc"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/dp_15"
+                android:paddingRight="@dimen/dp_15">
+
+                <EditText
+                    android:id="@+id/recharge_num_et"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/app_edf3fc"
+                    android:gravity="center_vertical|left"
+                    android:hint="@string/recharge_num_hints"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@color/app_c4cfe1"
+                    android:textSize="@dimen/sp_13" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/str_ediamond"
+                    android:textColor="@color/app_3e4f6c"
+                    android:textSize="@dimen/sp_15" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/real_time_total_price_tv"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="@dimen/dp_15"
+                android:text="$0.00"
+                android:textColor="@color/app_6667fd"
+                android:textSize="@dimen/dp_14" />
+
+            <Button
+                android:id="@+id/action_btn"
+                android:layout_width="258dp"
+                android:layout_height="@dimen/dp_45"
+                android:layout_marginTop="@dimen/dp_27"
+                android:background="@drawable/btn_selector"
+                android:enabled="false"
+                android:text="@string/rechage_buy_now"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/top_layout"
+                app:layout_constraintWidth_percent="0.66"
+                app:layout_goneMarginTop="@dimen/dp_16" />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/app_3e4f6c">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="60dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_cash_balance"
+                android:textColor="@color/app_dbe8fa"
+                android:textSize="@dimen/sp_14" />
+
+            <TextView
+                android:id="@+id/my_account_balance_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/recharge_tv"
+                android:layout_marginTop="@dimen/dp_6"
+                android:textColor="@color/app_aea5ff"
+                android:textSize="@dimen/sp_16"
+                tools:text="$1000" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/recharge_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/shadow_send_option"
+            android:gravity="center"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_20"
+            android:text="@string/str_add_currency"
+            android:textColor="@color/app_3e4f6c"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+</RelativeLayout>

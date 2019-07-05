@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dp_6">
+
+    <CheckBox
+        android:id="@+id/sku_title_tv"
+        android:layout_width="88dp"
+        android:clickable="false"
+        android:layout_height="45dp"
+        android:background="@drawable/sku_bg_selector"
+        android:button="@null"
+        android:gravity="center"
+        android:text="$68"
+        android:textColor="@color/sku_text_color"
+        android:textSize="@dimen/sp_16" />
+
+</FrameLayout>

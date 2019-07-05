@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <Button
+        android:text="连接google play"
+        android:onClick="init"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/getSku"
+        android:text="getSkus"
+        android:onClick="getSkus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+
+        android:text="支付第一个"
+        android:onClick="payFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+
+        android:text="查询历史"
+        android:onClick="payHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>

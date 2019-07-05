@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners  android:bottomLeftRadius="@dimen/dp_14" android:bottomRightRadius="@dimen/dp_14"/>
+            <padding
+                android:bottom="2dp"
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp"
+                />
+            <solid android:color="#034286F5"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners  android:bottomLeftRadius="@dimen/dp_14" android:bottomRightRadius="@dimen/dp_14"/>
+            <padding
+                android:bottom="2dp"
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp"
+                />
+            <solid android:color="#034286F5"/>
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <corners  android:bottomLeftRadius="@dimen/dp_14" android:bottomRightRadius="@dimen/dp_14"/>
+            <padding
+                android:bottom="2dp"
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp"
+                />
+            <solid android:color="#034286F5"/>
+        </shape>
+    </item>
+
+
+    <item
+        android:bottom="2dp"
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp">
+        <shape>
+            <corners  android:bottomLeftRadius="@dimen/dp_14" android:bottomRightRadius="@dimen/dp_14"/>
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+
+</layer-list>

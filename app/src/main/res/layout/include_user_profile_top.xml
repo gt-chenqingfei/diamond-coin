@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_bottom_round_7dp_shadow"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_head_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_10"
+            android:src="@drawable/love_header_holder"
+            app:civ_border_width="0dp" />
+
+        <TextView
+            android:id="@+id/user_phone_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_20"
+            android:text="@string/app_name"
+            android:textColor="@color/app_7e94bb"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+            android:id="@+id/total_coin_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="0"
+            android:textColor="@color/app_6667fd"
+            android:textSize="@dimen/sp_40"
+            app:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$"
+                android:textColor="@color/app_7e94bb"
+                android:textSize="@dimen/sp_14"
+                app:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/total_coin_value_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="1dp"
+                android:text="0"
+                android:textColor="@color/app_3e4f6c"
+                android:textSize="@dimen/sp_18"
+                app:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USD"
+                android:textColor="@color/app_7e94bb"
+                android:textSize="@dimen/sp_14"
+                app:layout_gravity="center" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

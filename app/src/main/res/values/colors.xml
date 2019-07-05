@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="app_3e4f6c">#3e4f6c</color>
+    <color name="app_3eff6c_60">#993e4f6c</color>
+    <color name="app_4a63ab">#4a63ab</color>
+    <color name="app_7e94bb">#7e94bb</color>
+    <color name="app_c4cfe1">#c4cfe1</color>
+    <color name="app_edf3fc">#edf3fc</color>
+    <color name="app_a4adbb">#a4adbb</color>
+    <color name="app_a5aebc">#a5aebc</color>
+    <color name="app_fafcff">#fafcff</color>
+    <color name="app_f7f9fe">#f7f9fe</color>
+    <color name="app_edf1f8">#edf1f8</color>
+    <color name="app_disable">#7e94bb</color>
+    <color name="app_shadow">#1a484b9e</color>
+    <color name="app_dbe8fa">#dbe8fa</color>
+    <color name="app_aea5ff">#aea5ff</color>
+    <color name="app_6667fd">#6667fd</color>
+
+    <color name="white">#ffffff</color>
+    <color name="green">#22d0a5</color>
+    <color name="pink">#f5aba1</color>
+    <color name="blue">#6667fd</color>
+    <color name="color_transparent">#00000000</color>
+    <drawable name="transparent">#00000000</drawable>
+
+    <color name="black_transparent">#5a000000</color>
+    <color name="black_transparent_50_present">#7f000000</color>
+
+    <!--withdraw currency-->
+    <color name="withdraw_currency_nomore_ediamond_textcolor">#ee9989</color>
+    <color name="withdraw_currency_nomore_ediamond_back">#fbe9e6</color>
+</resources>
